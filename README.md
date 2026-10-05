@@ -1,1 +1,1 @@
-CDC study with the aim to learn technologies like debezium and kafka 
+CDC study with the aim of learning change data capture (CDC) related technologies like debezium and kafka. I will also attempt to utilise Docker without too much AI guidance to learn more about containerisation. In addition, I will also be using Vim to edit the text in this project, hoping that I get to familiarise myself with Vim with a goal of effiency (it's also really fun LOL).
