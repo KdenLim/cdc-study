@@ -19,8 +19,13 @@ try:
             continue
 
         value = msg.value()
+        if value is None:
+            continue
         event = json.loads(value)
-        print(msg.topic() ,event['payload']['after'])
+        print(f"{msg.topic()}, operation type: {event['payload']['op']}") # CRUD operations
+        print(f"before: {event['payload']['before']}")
+        print(f"after: {event['payload']['after']}")
+        print('===')
 
 except KeyboardInterrupt:
     print("\nStopping Consumer")
